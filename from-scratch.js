@@ -61,6 +61,8 @@ const getLargestNumber = (numbers) => {
   return greatest
 };
 //console.log(getLargestNumber(sampleNumbers));
+
+
 /* -------------------------------------------------- */
 /* --------------OBJECT ARRAY PROBLEMS--------------- */
 /* -------------------------------------------------- */
@@ -75,9 +77,11 @@ const sampleUsers = [
 
 // Problem 6
 const printUserNamesAndScores = (users) => {
-
+  const namesAndScores = users.map((user) => {
+    console.log(`${user.name} scored ${user.score} points`)
+  })
 };
-
+//printUserNamesAndScores(sampleUsers);
 
 // Problem 7
 const getUserNames = (users) => {
