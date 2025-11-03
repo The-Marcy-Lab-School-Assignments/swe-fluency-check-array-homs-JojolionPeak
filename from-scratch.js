@@ -40,19 +40,27 @@ const sampleNumbers = [7, 3, 9, 1, 4, 8, 2, 10, 5, 6];
 
 // Problem 4
 const getEvenNumbers = (nums) => {
-  const evenNums = nums.sort((num) => {
+  const evenNums = nums.filter((num) => {
     if (num % 2 === 0) {
       return num
     }
   })
   return evenNums
 };
-console.log(getEvenNumbers(sampleNumbers))
+//console.log(getEvenNumbers(sampleNumbers))
+
+
 // Problem 5
 const getLargestNumber = (numbers) => {
-
+  let greatest = -Infinity
+  const largest = numbers.find((num) => {
+    if (num > greatest) {
+      greatest = num
+    }
+  })
+  return greatest
 };
-
+//console.log(getLargestNumber(sampleNumbers));
 /* -------------------------------------------------- */
 /* --------------OBJECT ARRAY PROBLEMS--------------- */
 /* -------------------------------------------------- */
