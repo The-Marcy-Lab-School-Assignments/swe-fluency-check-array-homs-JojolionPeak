@@ -103,12 +103,19 @@ const getActiveUsersUnder30 = (users) => {
 };
 //console.log(getActiveUsersUnder30(sampleUsers));
 
+
 // Problem 9
 const getTotalScore = (users) => {
-
+  const initialValue = 0
+  const score = users.reduce((user, score) => user + score, initialValue)
+  return score
 };
+//console.log(getTotalScore(sampleUsers));
+
 
 // Problem 10
 const sortUsersByScoreDescending = (users) => {
-
+  const sortedUsers = users.sort((user) => {
+    if
+  })
 };
