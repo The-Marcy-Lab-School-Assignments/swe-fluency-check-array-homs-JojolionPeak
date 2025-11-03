@@ -115,7 +115,15 @@ const getTotalScore = (users) => {
 
 // Problem 10
 const sortUsersByScoreDescending = (users) => {
+  let greatest = 100
   const sortedUsers = users.sort((user) => {
-    if
+    if (user.score === greatest) {
+      return -1
+    } else if (user.score < greatest) {
+      greatest = user.score
+      return 1
+    }
   })
+  return sortedUsers
 };
+console.log(sortUsersByScoreDescending(sampleUsers));
