@@ -83,18 +83,25 @@ const printUserNamesAndScores = (users) => {
 };
 //printUserNamesAndScores(sampleUsers);
 
+
 // Problem 7
 const getUserNames = (users) => {
   const usernames = users.map((user) => user.name)
   return usernames
 };
-console.log(getUserNames(sampleUsers));
+//console.log(getUserNames(sampleUsers));
+
 
 // Problem 8
 const getActiveUsersUnder30 = (users) => {
-
+  const activeUnder30 = users.filter((user) => {
+    if (user.age < 30 && user.isActive === true) {
+      return user
+    }
+  })
+  return activeUnder30
 };
-
+//console.log(getActiveUsersUnder30(sampleUsers));
 
 // Problem 9
 const getTotalScore = (users) => {
